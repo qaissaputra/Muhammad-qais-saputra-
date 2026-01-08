@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Qais Saputra</title>
+    <title>Profil Qais Saputra - TKJ</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f4f7f6;
+            background: #eceff1;
             color: #333;
             display: flex;
             justify-content: center;
@@ -18,105 +18,127 @@
         }
         .card {
             background: white;
-            max-width: 450px;
+            max-width: 480px;
             width: 100%;
-            border-radius: 25px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
-        .header-bg {
-            background: linear-gradient(135deg, #2c3e50, #000000);
-            height: 110px;
+        .header-top {
+            background: #2c3e50;
+            height: 100px;
+            position: relative;
+        }
+        .profile-container {
+            text-align: center;
+            margin-top: -60px;
+            padding: 0 20px;
         }
         .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 6px solid white;
-            margin-top: -75px;
+            width: 120px;
+            height: 120px;
+            border-radius: 15px;
+            border: 4px solid white;
             object-fit: cover;
             background: #fff;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
-        .content { padding: 25px; }
-        h1 { font-size: 1.7rem; color: #2c3e50; margin-bottom: 5px; }
-        .school-tag { font-weight: 600; color: #3498db; margin-bottom: 20px; font-size: 0.95rem; }
+        .main-info h1 { font-size: 1.5rem; margin-top: 10px; color: #2c3e50; }
+        .sub-text { color: #3498db; font-weight: bold; font-size: 0.9rem; margin-bottom: 15px; }
         
-        .info-grid {
+        .section-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #7f8c8d;
+            margin: 20px 0 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
             text-align: left;
+        }
+
+        .grid-info {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
-            margin-bottom: 25px;
+            text-align: left;
         }
-        .info-item {
-            background: #f8f9fa;
-            padding: 12px;
-            border-radius: 12px;
-            border-bottom: 3px solid #dee2e6;
+        .info-box { background: #f9f9f9; padding: 10px; border-radius: 8px; }
+        .info-box small { font-size: 0.7rem; color: #95a5a6; display: block; }
+        .info-box span { font-size: 0.85rem; font-weight: 600; }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
         }
-        .info-item label {
-            display: block;
-            font-size: 0.7rem;
-            color: #7f8c8d;
-            text-transform: uppercase;
-            margin-bottom: 3px;
+        .skill-badge {
+            background: #e1f5fe;
+            color: #0288d1;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
         }
-        .info-item span {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: #2c3e50;
+
+        .footer {
+            padding: 25px;
         }
-        .full-width { grid-column: span 2; }
-        
-        .btn-github {
+        .btn-link {
             display: block;
             background: #2c3e50;
             color: white;
             text-decoration: none;
             padding: 12px;
-            border-radius: 12px;
+            border-radius: 10px;
             font-weight: bold;
+            text-align: center;
             transition: 0.3s;
+            margin-top: 20px;
         }
-        .btn-github:hover { background: #34495e; transform: translateY(-2px); }
+        .btn-link:hover { background: #34495e; }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <div class="header-bg"></div>
-        <img src="https://iili.io/fe5EZTF.md.webp" alt="Qais Saputra" class="profile-img">
+        <div class="header-top"></div>
         
-        <div class="content">
-            <h1>Qais Saputra</h1>
-            <p class="school-tag">SMKN Pasirian</p>
-
-            <div class="info-grid">
-                <div class="info-item">
-                    <label>Umur</label>
-                    <span>18 Tahun</span>
-                </div>
-                <div class="info-item">
-                    <label>Agama</label>
-                    <span>Islam</span>
-                </div>
-                <div class="info-item">
-                    <label>Hobi</label>
-                    <span>Coding & Mancing 🎣</span>
-                </div>
-                <div class="info-item">
-                    <label>Status</label>
-                    <span>Siswa</span>
-                </div>
-                <div class="info-item full-width">
-                    <label>Alamat</label>
-                    <span>Pasirian, Lumajang, Jawa Timur</span>
-                </div>
+        <div class="profile-container">
+            <img src="https://iili.io/fe5EZTF.md.webp" alt="Qais Saputra" class="profile-img">
+            
+            <div class="main-info">
+                <h1>Qais Saputra</h1>
+                <p class="sub-text">Teknik Komputer dan Jaringan</p>
             </div>
 
-            <a href="https://github.com" class="btn-github">Kunjungi GitHub Saya</a>
+            <div class="footer">
+                <p class="section-title">Biodata Dasar</p>
+                <div class="grid-info">
+                    <div class="info-box"><small>Sekolah</small><span>SMKN Pasirian</span></div>
+                    <div class="info-box"><small>Umur</small><span>18 Tahun</span></div>
+                    <div class="info-box"><small>Agama</small><span>Islam</span></div>
+                    <div class="info-box"><small>Hobi</small><span>Coding & Mancing</span></div>
+                </div>
+
+                <p class="section-title">Keahlian TKJ</p>
+                <div class="skills-container">
+                    <span class="skill-badge">MikroTik</span>
+                    <span class="skill-badge">Instalasi OS</span>
+                    <span class="skill-badge">Cabling (RJ45)</span>
+                    <span class="skill-badge">Troubleshooting</span>
+                    <span class="skill-badge">Linux Server</span>
+                    <span class="skill-badge">Network Security</span>
+                </div>
+
+                <p class="section-title">Lokasi</p>
+                <div class="info-box" style="text-align: center;">
+                    <span>📍 Pasirian, Lumajang, Jawa Timur</span>
+                </div>
+
+                <a href="https://github.com" class="btn-link">Hubungi via GitHub</a>
+            </div>
         </div>
     </div>
 
