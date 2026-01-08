@@ -8,8 +8,8 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f0f4f8;
-            color: #2d3436;
+            background: #f4f7f6;
+            color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,58 +18,60 @@
         }
         .card {
             background: white;
-            max-width: 400px;
+            max-width: 450px;
             width: 100%;
             border-radius: 25px;
             overflow: hidden;
             box-shadow: 0 15px 35px rgba(0,0,0,0.1);
             text-align: center;
         }
-        .header-gradient {
-            background: linear-gradient(135deg, #2c3e50, #4ca1af);
-            height: 120px;
+        .header-bg {
+            background: linear-gradient(135deg, #2c3e50, #000000);
+            height: 110px;
         }
         .profile-img {
-            width: 140px;
-            height: 140px;
-            border-radius: 20px;
-            border: 5px solid white;
-            margin-top: -70px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 6px solid white;
+            margin-top: -75px;
             object-fit: cover;
             background: #fff;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
-        .content { padding: 25px 30px 35px; }
-        h1 { font-size: 1.6rem; color: #2c3e50; margin-bottom: 5px; }
-        .location { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 20px; }
+        .content { padding: 25px; }
+        h1 { font-size: 1.7rem; color: #2c3e50; margin-bottom: 5px; }
+        .school-tag { font-weight: 600; color: #3498db; margin-bottom: 20px; font-size: 0.95rem; }
         
-        .info-list {
+        .info-grid {
             text-align: left;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
             margin-bottom: 25px;
         }
         .info-item {
             background: #f8f9fa;
-            padding: 12px 15px;
+            padding: 12px;
             border-radius: 12px;
-            margin-bottom: 10px;
-            border-left: 4px solid #4ca1af;
+            border-bottom: 3px solid #dee2e6;
         }
         .info-item label {
             display: block;
-            font-size: 0.75rem;
-            font-weight: bold;
-            color: #4ca1af;
+            font-size: 0.7rem;
+            color: #7f8c8d;
             text-transform: uppercase;
+            margin-bottom: 3px;
         }
         .info-item span {
-            font-size: 1rem;
-            color: #34495e;
-            font-weight: 500;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #2c3e50;
         }
+        .full-width { grid-column: span 2; }
         
-        .btn-social {
-            display: inline-block;
-            width: 100%;
+        .btn-github {
+            display: block;
             background: #2c3e50;
             color: white;
             text-decoration: none;
@@ -78,34 +80,43 @@
             font-weight: bold;
             transition: 0.3s;
         }
-        .btn-social:hover {
-            background: #34495e;
-            transform: scale(1.02);
-        }
+        .btn-github:hover { background: #34495e; transform: translateY(-2px); }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <div class="header-gradient"></div>
+        <div class="header-bg"></div>
         <img src="https://iili.io/fe5EZTF.md.webp" alt="Qais Saputra" class="profile-img">
         
         <div class="content">
             <h1>Qais Saputra</h1>
-            <p class="location">📍 Pasirian, Lumajang, Jawa Timur</p>
+            <p class="school-tag">SMKN Pasirian</p>
 
-            <div class="info-list">
+            <div class="info-grid">
                 <div class="info-item">
-                    <label>Alamat</label>
-                    <span>Indonesia, Jawa Timur, Lumajang, Pasirian</span>
+                    <label>Umur</label>
+                    <span>18 Tahun</span>
+                </div>
+                <div class="info-item">
+                    <label>Agama</label>
+                    <span>Islam</span>
                 </div>
                 <div class="info-item">
                     <label>Hobi</label>
-                    <span>Coding & Memancing 🎣</span>
+                    <span>Coding & Mancing 🎣</span>
+                </div>
+                <div class="info-item">
+                    <label>Status</label>
+                    <span>Siswa</span>
+                </div>
+                <div class="info-item full-width">
+                    <label>Alamat</label>
+                    <span>Pasirian, Lumajang, Jawa Timur</span>
                 </div>
             </div>
 
-            <a href="https://github.com" class="btn-social">Lihat GitHub Saya</a>
+            <a href="https://github.com" class="btn-github">Kunjungi GitHub Saya</a>
         </div>
     </div>
 
