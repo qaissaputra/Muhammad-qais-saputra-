@@ -8,8 +8,8 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #e9ecef;
-            color: #333;
+            background: #f0f4f8;
+            color: #2d3436;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,85 +18,94 @@
         }
         .card {
             background: white;
-            max-width: 420px;
+            max-width: 400px;
             width: 100%;
-            border-radius: 30px;
+            border-radius: 25px;
             overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
             text-align: center;
         }
-        .header-bg {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            height: 110px;
+        .header-gradient {
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            height: 120px;
         }
         .profile-img {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            border: 6px solid white;
-            margin-top: -80px;
-            object-fit: cover;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-        .content { padding: 30px; }
-        h1 { font-size: 1.6rem; color: #2c5364; margin-bottom: 5px; }
-        .location-tag { color: #666; font-size: 0.85rem; margin-bottom: 20px; display: flex; justify-content: center; align-items: center; gap: 5px; }
-        
-        .info-box {
-            background: #f8f9fa;
-            padding: 20px;
+            width: 140px;
+            height: 140px;
             border-radius: 20px;
+            border: 5px solid white;
+            margin-top: -70px;
+            object-fit: cover;
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .content { padding: 25px 30px 35px; }
+        h1 { font-size: 1.6rem; color: #2c3e50; margin-bottom: 5px; }
+        .location { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 20px; }
+        
+        .info-list {
             text-align: left;
             margin-bottom: 25px;
         }
-        .info-item { margin-bottom: 12px; font-size: 0.95rem; }
-        .info-item b { color: #2c5364; display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
-        .info-item span { color: #444; font-weight: 500; }
+        .info-item {
+            background: #f8f9fa;
+            padding: 12px 15px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            border-left: 4px solid #4ca1af;
+        }
+        .info-item label {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: #4ca1af;
+            text-transform: uppercase;
+        }
+        .info-item span {
+            font-size: 1rem;
+            color: #34495e;
+            font-weight: 500;
+        }
         
-        .btn-group { display: flex; gap: 10px; }
-        .btn {
-            flex: 1;
+        .btn-social {
+            display: inline-block;
+            width: 100%;
+            background: #2c3e50;
+            color: white;
             text-decoration: none;
             padding: 12px;
             border-radius: 12px;
             font-weight: bold;
             transition: 0.3s;
-            font-size: 0.9rem;
         }
-        .btn-primary { background: #2c5364; color: white; }
-        .btn-primary:hover { background: #203a43; transform: translateY(-2px); }
+        .btn-social:hover {
+            background: #34495e;
+            transform: scale(1.02);
+        }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <div class="header-bg"></div>
-        <img src="IMG_20250729_003351_299.jpg" alt="Qais Saputra" class="profile-img">
+        <div class="header-gradient"></div>
+        <img src="https://iili.io/fe5EZTF.md.webp" alt="Qais Saputra" class="profile-img">
         
         <div class="content">
             <h1>Qais Saputra</h1>
-            <div class="location-tag">
-                📍 Pasirian, Lumajang, Jawa Timur
-            </div>
+            <p class="location">📍 Pasirian, Lumajang, Jawa Timur</p>
 
-            <div class="info-box">
+            <div class="info-list">
                 <div class="info-item">
-                    <b>Alamat Lengkap</b>
-                    <span>Pasirian, Lumajang, Jawa Timur, Indonesia</span>
+                    <label>Alamat</label>
+                    <span>Indonesia, Jawa Timur, Lumajang, Pasirian</span>
                 </div>
                 <div class="info-item">
-                    <b>Hobi</b>
+                    <label>Hobi</label>
                     <span>Coding & Memancing 🎣</span>
                 </div>
-                <div class="info-item">
-                    <b>Status</b>
-                    <span>Student / Developer</span>
-                </div>
             </div>
 
-            <div class="btn-group">
-                <a href="https://github.com" class="btn btn-primary">Project Saya</a>
-            </div>
+            <a href="https://github.com" class="btn-social">Lihat GitHub Saya</a>
         </div>
     </div>
 
