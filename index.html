@@ -5,74 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Muhammad Qais Saputra</title>
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            text-align: center;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 40px 20px;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid white;
-            margin-top: 20px;
-        }
-        .container {
+            background: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             padding: 20px;
-            max-width: 600px;
-            margin: auto;
         }
         .card {
             background: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
         }
-        h1 { margin: 10px 0; }
-        p { color: #7f8c8d; }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;
+        .card:hover { transform: translateY(-5px); }
+        
+        .header-gradient {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            height: 100px;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px; /* Bentuk kotak membulat agar estetik */
+            border: 5px solid white;
+            margin-top: -75px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .content { padding: 25px; }
+        h1 { font-size: 1.4rem; color: #1e3c72; margin-bottom: 5px; }
+        .bio { font-style: italic; color: #777; margin-bottom: 20px; font-size: 0.9rem; }
+        
+        .details { text-align: left; background: #f8f9fa; padding: 15px; border-radius: 15px; margin-bottom: 20px; }
+        .details p { font-size: 0.9rem; margin: 8px 0; border-bottom: 1px dashed #ddd; padding-bottom: 5px; }
+        .details b { color: #1e3c72; width: 100px; display: inline-block; }
+        
+        .btn-contact {
+            display: block;
+            background: #1e3c72;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: 0.3s;
         }
+        .btn-contact:hover { background: #2a5298; box-shadow: 0 5px 15px rgba(30,60,114,0.3); }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="https://via.placeholder.com/150" alt="Foto Qais" class="profile-img">
-    <h1>Muhammad Qais Saputra</h1>
-    <p>Siswa | Kreator | Pelajar</p>
-</header>
-
-<div class="container">
     <div class="card">
-        <h3>Tentang Saya</h3>
-        <p>Halo! Nama saya Qais. Saya adalah seorang siswa yang sedang belajar membuat website langsung dari HP.</p>
-    </div>
+        <div class="header-gradient"></div>
+        <img src="IMG_20250729_003351_299.jpg" alt="Muhammad Qais Saputra" class="profile-img">
+        
+        <div class="content">
+            <h1>Muhammad Qais Saputra</h1>
+            <p class="bio">"Somewhere only we know"</p>
 
-    <div class="card">
-        <h3>Tugas Sekolah</h3>
-        <p>Klik tombol di bawah untuk melihat koleksi tugas saya.</p>
-        <a href="#" class="button">Lihat Tugas</a>
-    </div>
-</div>
+            <div class="details">
+                <p><b>Nama</b> Muhammad Qais Saputra</p>
+                <p><b>Status</b> Pelajar / Creator</p>
+                <p><b>Hobi</b> Fotografi & Coding</p>
+                <p><b>Lokasi</b> Indonesia</p>
+            </div>
 
-<footer>
-    <p>&copy; 2024 Muhammad Qais Saputra</p>
-</footer>
+            <a href="https://github.com" class="btn-contact">Hubungi Saya</a>
+        </div>
+    </div>
 
 </body>
 </html>
