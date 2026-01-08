@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Muhammad Qais Saputra</title>
+    <title>Profil Qais Saputra</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f0f2f5;
+            background: #e9ecef;
             color: #333;
             display: flex;
             justify-content: center;
@@ -18,70 +18,85 @@
         }
         .card {
             background: white;
-            max-width: 400px;
+            max-width: 420px;
             width: 100%;
-            border-radius: 25px;
+            border-radius: 30px;
             overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
             text-align: center;
-            transition: transform 0.3s ease;
         }
-        .card:hover { transform: translateY(-5px); }
-        
-        .header-gradient {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            height: 100px;
+        .header-bg {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            height: 110px;
         }
-        
         .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 20px; /* Bentuk kotak membulat agar estetik */
-            border: 5px solid white;
-            margin-top: -75px;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 6px solid white;
+            margin-top: -80px;
             object-fit: cover;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
+        .content { padding: 30px; }
+        h1 { font-size: 1.6rem; color: #2c5364; margin-bottom: 5px; }
+        .location-tag { color: #666; font-size: 0.85rem; margin-bottom: 20px; display: flex; justify-content: center; align-items: center; gap: 5px; }
         
-        .content { padding: 25px; }
-        h1 { font-size: 1.4rem; color: #1e3c72; margin-bottom: 5px; }
-        .bio { font-style: italic; color: #777; margin-bottom: 20px; font-size: 0.9rem; }
+        .info-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .info-item { margin-bottom: 12px; font-size: 0.95rem; }
+        .info-item b { color: #2c5364; display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
+        .info-item span { color: #444; font-weight: 500; }
         
-        .details { text-align: left; background: #f8f9fa; padding: 15px; border-radius: 15px; margin-bottom: 20px; }
-        .details p { font-size: 0.9rem; margin: 8px 0; border-bottom: 1px dashed #ddd; padding-bottom: 5px; }
-        .details b { color: #1e3c72; width: 100px; display: inline-block; }
-        
-        .btn-contact {
-            display: block;
-            background: #1e3c72;
-            color: white;
+        .btn-group { display: flex; gap: 10px; }
+        .btn {
+            flex: 1;
             text-decoration: none;
             padding: 12px;
             border-radius: 12px;
             font-weight: bold;
             transition: 0.3s;
+            font-size: 0.9rem;
         }
-        .btn-contact:hover { background: #2a5298; box-shadow: 0 5px 15px rgba(30,60,114,0.3); }
+        .btn-primary { background: #2c5364; color: white; }
+        .btn-primary:hover { background: #203a43; transform: translateY(-2px); }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <div class="header-gradient"></div>
-        <img src="IMG_20250729_003351_299.jpg" alt="Muhammad Qais Saputra" class="profile-img">
+        <div class="header-bg"></div>
+        <img src="IMG_20250729_003351_299.jpg" alt="Qais Saputra" class="profile-img">
         
         <div class="content">
-            <h1>Muhammad Qais Saputra</h1>
-            <p class="bio">"Somewhere only we know"</p>
-
-            <div class="details">
-                <p><b>Nama</b> Muhammad Qais Saputra</p>
-                <p><b>Status</b> Pelajar / Creator</p>
-                <p><b>Hobi</b> Fotografi & Coding</p>
-                <p><b>Lokasi</b> Indonesia</p>
+            <h1>Qais Saputra</h1>
+            <div class="location-tag">
+                📍 Pasirian, Lumajang, Jawa Timur
             </div>
 
-            <a href="https://github.com" class="btn-contact">Hubungi Saya</a>
+            <div class="info-box">
+                <div class="info-item">
+                    <b>Alamat Lengkap</b>
+                    <span>Pasirian, Lumajang, Jawa Timur, Indonesia</span>
+                </div>
+                <div class="info-item">
+                    <b>Hobi</b>
+                    <span>Coding & Memancing 🎣</span>
+                </div>
+                <div class="info-item">
+                    <b>Status</b>
+                    <span>Student / Developer</span>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <a href="https://github.com" class="btn btn-primary">Project Saya</a>
+            </div>
         </div>
     </div>
 
